@@ -1,0 +1,149 @@
+.products_section{
+    width: 100%;
+    padding:20px 60px;
+    /* background-color: blue; */
+}
+
+.products{
+    padding:20px;
+    display: flex;
+    /* background-color: blue; */
+    flex-wrap: wrap;
+    row-gap: 25px;
+    justify-content: space-between;
+}
+
+.product{
+    width: 19%;
+    height: 300px;
+    /* background-color: aqua; */
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0px 0px 2px 1px;
+
+}
+
+.product img{
+    width: 100%;
+}
+
+.prod{
+    width: 100%;
+    height: 35%;
+    background-color: rgba(0, 0, 0, 0.37);
+    position:absolute;
+    bottom: 0;
+    padding:5px;
+    color: white;
+}
+
+.prod h5{
+    font-size: 17px;
+}
+
+.prod p{
+    font-size: 14px;
+}
+
+.prod div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.prod button{
+    width: 60%;
+    padding:5px;
+    background-color: white;
+    color:black;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+.logo{
+    width:100px !important;
+    height: 70px !important;
+}
+
+.cart{
+    background-color: white !important;
+    border-radius: 10px !important;
+    width: 20px !important;
+    height: 20px !important;
+    text-align: center;
+}
+
+
+@media (max-width:520px) {
+    .products_section{
+        padding: 10px 30px;
+    }
+    .product{
+        width: 49%;
+        height: 270px;
+    }
+
+    .prod div{
+        padding:0px 5px;
+    }
+
+    .prod h5{
+        font-size: 15px;
+    }
+
+    .prod p{
+        font-size: 13px;
+    }
+
+    .prod button{
+        width: 60%;
+        font-size: 14px;
+        padding:0px;
+        border-radius: 4px;
+    }
+    
+}
+
+@media (max-width:440px) {
+    .products_section{
+        padding:0px;
+    }
+
+    .product{
+        height: 220px;
+    }
+    
+}
+
+
+@media (min-width:521px) and (max-width:740px) {
+    .products_section{
+        padding: 10px 20px;
+    }
+
+    .product{
+        width:32%;
+        height:270px;
+    }
+
+    .prod{
+        height: 30%;
+    }
+
+    .prod h5{
+        font-size: 14px;
+    }
+
+    .prod p{
+        font-size: 11px;
+    }
+
+    .prod button{
+        font-size: 12px;
+    }
+    
+}
